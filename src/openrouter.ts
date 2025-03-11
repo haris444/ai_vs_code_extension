@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import axios from 'axios';
 
 const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const OPENROUTER_API_KEY = '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';
+const OPENROUTER_API_KEY = '';
 
 // Create a persistent chat history store
 interface ChatMessage {
