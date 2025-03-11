@@ -1,0 +1,7 @@
+[
+    {
+        "key": "ctrl+shift+e", // Define your preferred shortcut here
+        "command": "ai-vs-code-extension.explainCode",
+        "when": "editorTextFocus"
+    }
+]
