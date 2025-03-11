@@ -1,71 +1,72 @@
-# ai-vs-code-extension README
+# AI VS Code Extension
 
-This is the README for your extension "ai-vs-code-extension". After writing up a brief description, we recommend including the following sections.
+This is the AI VS Code Extension, a powerful tool that integrates AI capabilities into Visual Studio Code to enhance your coding experience. This extension provides features such as inline code completions, code explanations, and a chat interface to ask questions about your code.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Inline Code Completions**: Get code suggestions as you type, powered by your choice of AI provider.
+- **Code Explanations**: Select a piece of code and get a detailed explanation of what it does.
+- **Chat Interface**: Ask questions about your code and get responses from the AI.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/ai-vs-code-extension.git
+    ```
+2. Navigate to the extension directory:
+    ```sh
+    cd ai-vs-code-extension
+    ```
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
+4. Open the extension in Visual Studio Code:
+    ```sh
+    code .
+    ```
+5. Press `F5` to open a new VS Code window with the extension loaded.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+### Inline Code Completions
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open a Python file in VS Code.
+2. Start typing and the extension will provide inline code completions based on the selected AI provider.
 
-## Extension Settings
+### Code Explanations
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Select a piece of code in your editor.
+2. Press `Ctrl+Shift+E` (or `Cmd+Shift+E` on macOS) to trigger the "Explain Code" command.
+3. A new panel will open with the explanation of the selected code.
 
-For example:
+### Chat Interface
 
-This extension contributes the following settings:
+1. After triggering the "Explain Code" command, you can use the chat interface in the explanation panel to ask further questions about your code.
+2. Type your question in the input box and press "Send".
+3. The AI will respond to your question in the chat interface.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Configuration
 
-## Known Issues
+You can configure the extension to use different AI providers for completions, explanations, and chat. The available providers are `OpenRouter` and `Ollama`.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+To configure the extension, go to `File > Preferences > Settings` and search for `aiVsCodeExtension`. You can set the following options:
 
-## Release Notes
+- `aiVsCodeExtension.inlineCompletionApiProvider`: Select the API provider for inline completions.
+- `aiVsCodeExtension.codeExplanationApiProvider`: Select the API provider for code explanations.
+- `aiVsCodeExtension.chatApiProvider`: Select the API provider for chat messages.
 
-Users appreciate release notes as you update your extension.
+## Contributing
 
-### 1.0.0
+Contributions are welcome! Please open an issue or submit a pull request on GitHub.
 
-Initial release of ...
+## License
 
-### 1.0.1
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Fixed issue #.
+## Acknowledgements
 
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [OpenRouter](https://openrouter.com/)
+- [Ollama](https://ollama.com/)
